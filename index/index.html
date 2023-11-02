@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Propinas</title>
+    <link rel="stylesheet" href="stayle.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Calculadora de Propina</h1>
+    </header>
+    
+    <section class="calculator-container">
+        <div class="input-section">
+            <label for="bill" class="input-section__bill-label">Total de la cuenta</label>
+            <input id="bill" class="input-section__bill-input" type="number" value="">
+
+            <label for="percentage" class="input-section__percentage-label">Porcentaje de la propina</label>
+            <input id="percentage" class="input-section__percentage-input" type="number" required>
+            <br>
+            <button type="button" class="button" onclick="CalcularTotal()">Calcular</button>
+            
+        </div>
+
+        <h2 class="title-2">Resumen</h2>
+
+        <div class="result-section">
+
+            <div class="result">
+
+
+                <div>
+                    <p class="result__Total-count">Total de la cuenta</p>
+                </div>
+
+                <div>
+                    <p class="result__count-value">0</p>
+                </div>
+
+                <div>
+                    <p class="result__tip">Propina</p>
+                </div>
+
+                <div>
+                    <p class="result__tip-value">0</p>
+                </div>
+
+                <div>
+                    <p class="result__total-pay">Total a Pagar</p>
+                </div>
+
+                <div>
+                    <p class="result__pay-value">0</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
